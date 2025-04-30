@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Gavyn Mitchell
+	File Name: index.html
+	Date: January 15, 2025
+ -->
+<html lang="en">
+	<head>
+		<title>Index | Portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Coustard:900&display=swap" rel="stylesheet">
+	
+		<script> <!-- Middle ☰ icon because the right and left aligned one looks bad on this wireframe -->
+			function toggleMenu() {
+				const menu = document.getElementById("nav-menu");
+				menu.classList.toggle("active");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Gavyn Mitchell</h1>
+		</header>
+	
+		<nav>
+			<button class="hamburger" onclick="toggleMenu()">☰</button>
+			<ul id="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+			<div class="mobile">
+				<h2 id="title">Index</h2>
+				<p>Hello, my name is Gavyn Mitchell and this is my website. I created this website to showcase my HTML, CSS, and Javascript skills I learned
+				at my time at Florence-Darlington Technical College, and to have the opportunity to share more about myself and my skills.</p>
+				<p>If you wish to know more about my skills and experience, visit the About Me page, for my degrees and certificates, visit the Education page, 
+				for more on what I do in my free time, visit the Hobbies page, and if you wish to contact me or view my Linked In, you can visit the Contact page or the footer of any page.</p>
+				<img src="images/FamilyPhoto.jpg" alt="Image of Me" class="index-image">
+		</main>
+	
+		<footer>
+			<p>&copy; Copyright 2025. All Rights Reserved.</p>
+			<p><a href="mailto:gavyn.mitchell1@student.fdtc.edu">gavyn.mitchell1@student.fdtc.edu</a></p>
+			<a href="https://www.linkedin.com/in/gavyn-mitchell-3005b2287/">
+			<img src="images/LinkedIn.png" alt="LinkedIn" width="30" height="30">
+			</a>
+		</footer>
+	
+	</body>
+</html>

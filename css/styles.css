@@ -1,0 +1,452 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background-color: #F7F6DE; /* OffWhite */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Tablet Viewport: Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(#078D70, #26CEAA, #7BADE3);
+}
+/* 'Rockwell', rockwell  'American Typewriter', serif    Optima, Verdana, sans-serif*/
+header h1 {
+    font-family: 'Rockwell', rockwell;
+    padding: 5%;
+	text-shadow: 0 0 5px #26CEAA, 0 0 10px #7BADE3, 0 0 15px #078D70;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	font-size: 5em;
+	text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #078D70; /* Green */
+	position: relative;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+}
+
+#nav-menu {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    font-size: 1.5em;
+	font-family: Optima, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#nav-menu li a {
+    display: block;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+}
+
+main p {
+    font-size: 1.1em;
+	font-family: kanit;
+	margin: auto;
+	padding: 0.5% 15%;
+	text-align: center;
+}
+
+main h2 {
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	text-align: center;
+}
+
+main h3 {
+	font-size: 1.5em;
+	text-align: center;
+	margin: auto;
+	text-align: center;
+}
+
+main ul {
+    margin-left: 10%;
+}
+
+main li {
+    margin-left: 35%;
+}
+
+#title {
+	margin-bottom: 1%;
+}
+
+.funny {
+	transform: rotate(-10deg);
+}
+
+button {
+	background-color: #5049CB;
+	color: #fff;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+}
+
+.link {
+    color: #5049CB; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #7BADE3; /* Light blue */
+    padding: 2%;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 115%;
+}
+
+.tel-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hobbies {
+	text-align: center;
+	padding: 0% 10%;
+}
+
+#hobbies h2{
+	font-size: 1.6em;
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+	text-decoration: underline;
+}
+
+#education h3 {
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+	text-decoration: underline;
+}
+
+#contact h3 {
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+	text-decoration: underline;
+}
+
+/* Styles for Images */
+.hobbies-image {
+	display: block;
+    margin: 20px auto;
+    border-radius: 100px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #7BADE3;
+	border-top-color: #26CEAA;
+	border-bottom-color: #078D70;
+}
+
+#dog-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+#dog-images .hobbies-image {
+    margin: 0; 
+    height: 200px; /* Strangely necessary */
+    width: 200px;
+}
+
+#guitar-image {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#guitar-image .hobbies-image {
+	height: 40%;
+	width: 50%;
+}
+
+#hobbies-section {
+}
+
+#art-images {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px 0;
+}
+.art-image {
+	width: 45%;
+	height: 100%;
+	border-radius: 100px;
+	object-fit: cover;
+	border-style: solid;
+	border-width: 7px;
+	border-color: #3E1A78; /* Purple */
+	margin: auto;
+}
+
+.index-image {
+	border-color: #7BADE3;
+	border-top-color: #26CEAA;
+	border-bottom-color: #078D70;
+	border-radius: 100px;
+	border-style: solid;
+    border-width: 7px;
+	object-fit: cover;
+	display: block;
+    margin: 20px auto;
+    height: 60%; 
+    width: 50%;
+}
+
+.education-image {
+	display: block;
+    margin: 20px auto;
+    border-radius: 100px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #7BADE3;
+	border-top-color: #26CEAA;
+	border-bottom-color: #078D70;
+}
+
+#education-section {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+#education-section .education-image {
+	margin: 0; 
+    height: 60%; 
+    width:50%;
+}
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    background-color: #5049CB; 
+    color: #ffffff; 
+    padding: 1% 0;
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+footer img {
+	margin: auto;
+	width: 7.5%;
+	height: 7.5%;
+	align-content: center;
+	background-color: #E0DEFF;
+}
+
+/* Style rules for table content */
+th {
+    background-color: #f0f0ff;
+    color: #000000;
+    font-size: 1.5em;
+    border-style: solid;
+    border-width: 1px;
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+tr {
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Make each table cell the same size here */
+table {
+    width: 80%;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    margin: auto;
+    border-color: #3E1A78; 
+}
+
+caption {
+	font-size: 2em;
+}
+
+tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+strong {
+	color: #3E1A78;
+}
+
+
+/* Media Query for Cellphone Viewport */
+@media screen and (max-width: 599px) {
+    .hamburger {
+        display: block;
+		width: 100%;
+    }
+	
+     #nav-menu {
+        display: none;
+    }
+    
+    #nav-menu.active {
+        display: block;
+    }
+    
+    #nav-menu li {
+        border-top: 0.5px solid #99E8C2;
+    }
+	
+	#about {
+		display: none;
+	}
+	
+	 #about-mobile {
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+    
+    #about-mobile h3 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        text-decoration: underline;
+    }
+    
+    #about-mobile ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    
+    #about-mobile li {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+    
+    #about-mobile strong {
+        font-weight: bold;
+		color: #3E1A78;
+    }
+	
+	button {
+		padding: 2%;
+	}
+}
+
+/* Media Query for Desktop and Tablet Viewport */
+@media screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+	
+     #nav-menu {
+        display: block;
+    }
+    
+	
+    #nav-menu li {
+        display: inline-block;
+        border-top: none;
+        border-style: dotted;
+		border-color: #ffffff;
+        border-width: 5px;
+        border-radius: 3px;
+        margin: 0 5px;
+    }
+
+
+    #nav-menu li a:hover {
+		color: #078D70;
+        background-color: #ffffff; 
+        border-radius: 5px;
+    }
+	
+	#dog-images .hobbies-image:hover {
+    margin: 0; 
+    height: 400px; 
+    width: 400px;
+	}
+	
+	button:hover {
+		color: #5049CB;
+		background-color: #fff;
+	}
+	
+	table:hover {
+		width: 100%;
+		height: 100%;
+		border-width: 8px;
+	}
+	
+	.topnav {
+        display: none;
+    }
+	
+	#about-mobile {
+		display: none;
+	}
+	
+	#about {
+		display: table;
+	}
+}

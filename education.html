@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Gavyn Mitchell
+	File Name: education.html
+	Date: January 15, 2025
+ -->
+<html lang="en">
+	<head>
+		<title>Education | Portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Coustard:900&display=swap" rel="stylesheet">
+		
+		<script> <!-- Middle ☰ icon because the right and left aligned one looks bad on this wireframe -->
+			function toggleMenu() {
+				const menu = document.getElementById("nav-menu");
+				menu.classList.toggle("active");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Gavyn Mitchell</h1>
+		</header>
+	
+		<nav>
+			<button class="hamburger" onclick="toggleMenu()">☰</button>
+			<ul id="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+			<div id="education">
+			<h2 id="title">Education</h2>
+			<h3>Wilson High School</h3>
+			<ul>
+				<li>Diploma</li>
+				<li>MYP Programme Certificate</li>
+			</ul>
+			<p>In 2023 I received my diploma from Wison High, along with my MYP Programme certificate, which I spent a total of 6 years in.</p>
+			
+			<h3>Florence-Darlington Technical College</h3>
+			<ul>
+				<li>Certificate in General Technology</li>
+				<li>Associates Degree in Web Applications and Programming</li>
+			</ul>
+			<p>At FDTC, I began majoring in Network Systems Management for about a year, where I learned how to configure routers and servers,
+			but then changed to Web Applications and Programming because I loved the coding aspect more.
+			I also learned how to navigate the Windows operating system, including its Command Prompt, Control Panel, and Task Manager.</p>
+			<p>At the time of writing this (2/15/2025), I am set to graduate in May of this year with a Certificate in General Technology,
+			and an Associates in Web Applications and Programming.</p>
+			<hr>
+			<h3>IB Programme</h3>
+			<p>During the MYP and IB Programmes at Wilson, I had the opportunity to learn in Higher-Level classes and study skills not usually available, such as HTML, CSS, Python, and Art.
+			They were designed to create educated, well-rounded citizens, and required many hours of community service throughout each year.</p>
+			<div id="education-section">
+				<img src="images/CommunityService.jpg" alt="Community Service" class="education-image">
+			</div>
+			<p>7th Grade MYP Community Service</p>
+		</main>
+		
+		<footer>
+		<p>&copy; Copyright 2025. All Rights Reserved.</p>
+		<p><a href="mailto:gavyn.mitchell1@student.fdtc.edu">gavyn.mitchell1@student.fdtc.edu</a></p>
+		<a href="https://www.linkedin.com/in/gavyn-mitchell-3005b2287/">
+		<img src="images/LinkedIn.png" alt="LinkedIn" width="30" height="30">
+		</a>
+		</footer>
+	
+	</body>
+</html>

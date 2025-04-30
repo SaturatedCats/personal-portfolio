@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Gavyn Mitchell
+	File Name: hobbies.html
+	Date: January 15, 2025
+ -->
+<html lang="en">
+	<head>
+		<title>Hobbies | Portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script> <!-- Middle ☰ icon because the right and left aligned one looks bad on this wireframe -->
+			function toggleMenu() {
+				const menu = document.getElementById("nav-menu");
+				menu.classList.toggle("active");
+			}
+			
+			function changeGradient() {
+				const header = document.querySelector("header");
+				header.style.background = 
+				`linear-gradient(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+			}
+
+			function getRandomColor() {
+				return "#" + Math.floor(Math.random() * 16777215).toString(16);
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1 class="funny">Gavyn Mitchell</h1>
+			<button onclick="changeGradient()">Click me</button> 
+			<!-- Changws color of background linear gradient to 3 random colors each click, getRandomColor function decimal math, generates random number between 0 abd 1 and multiplies by(16777215 = white) 
+			to create a color spectrum, changeGradient changes, mobile button gets more padding -->
+		</header>
+	
+		<nav>
+			<button class="hamburger" onclick="toggleMenu()">☰</button>
+			<ul id="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main id="grad">
+			<h2 id="title">Hobbies</h2>
+			<div id="hobbies">
+				<h2>Swimming</h2>
+				<div id ="hobbies-section">
+					<p>Since I was young, I have been an avid swimmer. I have taken several swimming and diving classes to learn different styles and diving skills.
+					Although I rarely have the chance to swim nowadays, I still thoroughly enjoy swimming when I have the chance.</p>
+					<hr>
+					<h2>Walking my dog</h2>
+					<p>I adopted a dog in late July of 2024, and named her Nellie after another dog from a book series. She is a chigi, or a corgi chihuahua.
+					Her favorite activities include: Tearing apart her bed, jumping, running after her ball, jumping, jumping on my legs, chasing my cats, and jumping. <strong>Also jumping.</strong></p>
+					<div id="dog-images">
+						<img src="images/Nellie2.jpg" alt="My dog sitting1" class="hobbies-image">
+						<img src="images/Nellie3.jpg" alt="My dog sitting2" class="hobbies-image">
+						<img src="images/Nellie1.jpg" alt="My dog sitting3" class="hobbies-image">
+					</div>
+					<hr>
+				</div>
+				<h2>Video Games</h2>
+				<div id ="hobbies-section">
+					<p>Some of my earliest memories include playing videogames. I have played on a plethora of different consoles, and nowadays, I use videogames to spend time with my siblings.
+					When I was younger, I believed computers were magical with their complex parts and circuit boards, which later influenced my decision to learn programming and computer science.</p>
+					<hr>
+				</div>
+				<h2>Electric Guitar</h2>
+				<div id ="hobbies-section">
+					<p>Beginning in December of 2024 on a whim, I began to play the electric guitar. Because I have some experience with other musical instruments, including
+					the trumpet, violin, and recorder, my starting process was smoother. After much practice, this then became something I love to do regularly. As of writing this 
+					(March 5th, 2025), I can play 15 full songs, which are mainly some of my favorite songs from childhood videogames.</p>
+					<div id="guitar-image">
+						<img src="images/Guitar.jpg" alt="My guitar" class="hobbies-image">
+					</div>
+					<hr>
+				</div>
+				<h2>Art</h2>
+				<div id ="hobbies-section">
+					<p>In the IB Programme at Wilson High School, I created several pieces 
+					over the course of 2 years through their art program. These pieces span from a large variety of medias, such as
+					watercolors, animation, clay, 3-D Sculpture Collage, collage, and digital media.</p>
+					<p>Shown below is an image of my final art exhibition at the end of the two year course. 
+					While I do not remember each piece's name, I do remember some. 
+					The clay pot is named 'Personification', the giraffe is named 'Dopey' after one of my 
+					cats, the watercolor piece is 'Synesthesia', and the digital piece is called 'Road to Nowhere'.
+					Each piece related to my chosen theme of surrealism and dreams, and were inspired by 
+					the works of several surrealist artists I studied, such as Salvador Dahli, 
+					Vladmir Kush, and Frida Kahlo.</p>
+					<div id="art-images">
+						<img src="images/ArtImageBetter.jpg" alt="My Art Exhibition" class="art-image">
+						<img src="images/Synesthesia.jpg" alt="Synesthesia" class="art-image">
+					</div>
+				</div>
+			</div>
+		</main>
+	
+		<footer>
+			<p>&copy; Copyright 2025. All Rights Reserved.</p>
+			<p><a href="mailto:gavyn.mitchell1@student.fdtc.edu">gavyn.mitchell1@student.fdtc.edu</a></p>
+			<a href="https://www.linkedin.com/in/gavyn-mitchell-3005b2287/">
+			<img src="images/LinkedIn.png" alt="LinkedIn" width="30" height="30">
+			</a>
+		</footer>
+	
+	</body>
+</html>
+

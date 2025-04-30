@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Gavyn Mitchell
+	File Name: about.html
+	Date: January 15, 2025
+ -->
+<html lang="en">
+	<head>
+		<title>About Me | Portfolio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Coustard:900&display=swap" rel="stylesheet">
+	
+		<script> <!-- Middle ☰ icon because the right and left aligned one looks bad on this wireframe -->
+			function toggleMenu() {
+				const menu = document.getElementById("nav-menu");
+				menu.classList.toggle("active");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Gavyn Mitchell</h1>
+			<img src="### alt="cover image" class="">
+		</header>
+	
+		<nav>
+			<button class="hamburger" onclick="toggleMenu()">☰</button>
+			<ul id="nav-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+			<h2 id="title">About Me</h2>
+			<p>Hello, my name is Gavyn Mitchell. I was born in Florence, South Carolina in 2004.
+			Currently, I am a student at Florence-Darlington
+			Technical College pursuing a Web Applications and Programming Degree and after I graduate, I plan on pursing higher education at a nearby college, 
+			preferably the college my mother and sister went to: Francis Marion University. 
+			Below you can find a list of my skills and experience I have learned from work or education.</p>
+			
+			
+			<table id="about"> <!-- # for id -->
+					<caption>Skills and Experience</caption>
+					<tr>
+						<th>Coding Languages</th>
+						<th>Experience</th>
+						<th>Skills</th>
+					</tr>
+					<tr>
+						<td>HTML</th>
+						<td>Windows</td>
+						<td>Adaptability</td>
+					</tr>
+					<tr>
+						<td>CSS</th>
+						<td>Microsoft Word</td>
+						<td>Customer Service</td>
+					</tr>
+					<tr>
+						<td>Python</th>
+						<td>Excel</td>
+						<td>Active Listening</td>
+					</tr>
+					<tr>
+						<td>Javascript</th>
+						<td>Basic Router Configuration</td>
+						<td>Critical Thinking</td>
+					</tr>
+					<tr>
+						<td>C#</th>
+						<td>Basic Server Configuration</td>
+						<td>Problem-Solving</td>
+					</tr>
+				</table>
+				
+				<div id="about-mobile">
+				<h3>Skills and Experience</h3>
+				<ul>
+					<li><strong>Coding Languages:</strong> HTML, CSS, Python, Javascript, C++</li>
+					<li><strong>Experience:</strong> Windows, Word, Excel, Basic Router and Server Configuration</li>
+					<li><strong>Skills:</strong> Adaptability, Customer Service, Active Listening, Critical Thinking, Problem-Solving</li>
+				</ul>
+			</div>
+			
+			<p></p>
+		</main>
+	
+		<footer>
+			<p>&copy; Copyright 2025. All Rights Reserved.</p>
+			<p><a href="mailto:gavyn.mitchell1@student.fdtc.edu">gavyn.mitchell1@student.fdtc.edu</a></p>
+			<a href="https://www.linkedin.com/profile" target="_blank" rel="noopener noreferrer">
+			<img src="images/LinkedIn.png" alt="LinkedIn" width="30" height="30">
+			</a>
+		</footer>
+	
+	</body>
+</html>
